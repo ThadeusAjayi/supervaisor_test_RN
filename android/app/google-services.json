@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "369468658571",
+    "firebase_url": "https://buddie-heritage-bank.firebaseio.com",
+    "project_id": "buddie-heritage-bank",
+    "storage_bucket": "buddie-heritage-bank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369468658571:android:826b428a7c1f907263d58e",
+        "android_client_info": {
+          "package_name": "com.buddieapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369468658571-59agehlphu2pqlh2lia5pvoeph6hhklp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8-NkTGcEsc98tUffz5E88ZCKtxcrHfhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369468658571-59agehlphu2pqlh2lia5pvoeph6hhklp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
