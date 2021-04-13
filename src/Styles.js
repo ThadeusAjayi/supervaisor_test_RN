@@ -3,8 +3,7 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   parent: {
     backgroundColor: '#f8f8f8',
-    flex: 1,
-    paddingHorizontal: 20,
+    flex: 1
   },
   listItemParent: {
     flexDirection: 'row',

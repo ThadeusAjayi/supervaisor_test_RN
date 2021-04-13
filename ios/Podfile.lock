@@ -321,6 +321,10 @@ PODS:
     - React
   - RNScreens (2.11.0):
     - React
+  - RNSecureStorage (0.1.2):
+    - React
+  - RNSVG (12.1.1-0):
+    - React
   - RNVectorIcons (6.7.0):
     - React
   - toolbar-android (0.1.0-rc.2):
@@ -387,6 +391,8 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
+  - RNSecureStorage (from `../node_modules/react-native-secure-storage`)
+  - RNSVG (from `../node_modules/react-native-svg`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - "toolbar-android (from `../node_modules/@react-native-community/toolbar-android`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -479,6 +485,10 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
+  RNSecureStorage:
+    :path: "../node_modules/react-native-secure-storage"
+  RNSVG:
+    :path: "../node_modules/react-native-svg"
   RNVectorIcons:
     :path: "../node_modules/react-native-vector-icons"
   toolbar-android:
@@ -534,11 +544,13 @@ SPEC CHECKSUMS:
   RNGestureHandler: 7a5833d0f788dbd107fbb913e09aa0c1ff333c39
   RNReanimated: dd8c286ab5dd4ba36d3a7fef8bff7e08711b5476
   RNScreens: 0e91da98ab26d5d04c7b59a9b6bd694124caf88c
+  RNSecureStorage: 24d433f7673a0daade43689de805933a70641731
+  RNSVG: 1a8855adeb20c5beb0a808281608315fc1092d15
   RNVectorIcons: 368d6d8b8301224e5ffb6254191f4f8876c2be0d
   toolbar-android: 85f3ef4d691469f2d304e7dee4bca013aa1ba1ff
   Yoga: 7740b94929bbacbddda59bf115b5317e9a161598
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: bcf3f6b71b6ff8501b26fc9a7657e29f72bccb32
+PODFILE CHECKSUM: 170e1df5c159c92cba11259d9bb42c4c2e0e12ce
 
 COCOAPODS: 1.10.1

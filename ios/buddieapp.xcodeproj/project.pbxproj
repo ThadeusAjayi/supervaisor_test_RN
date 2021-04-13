@@ -792,7 +792,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.thad.supavideo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thad.supavideo;
 				PRODUCT_NAME = buddieapp;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -816,7 +816,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.thad.supavideo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thad.supavideo;
 				PRODUCT_NAME = buddieapp;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

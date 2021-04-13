@@ -21,9 +21,8 @@ export default ({navigation}) => {
     getVideoList()
     .then(res => {
       setLoading(false);
-      console.log('video List', res.data);
-      let listUpdate = videoList.push(...res.data);
-      console.log('list update', listUpdate);
+      let updatedList = [...res.data, ...videoList];
+      setVideoList(updatedList);
     })
     .catch(err => {
       setLoading(false);
@@ -38,19 +37,20 @@ export default ({navigation}) => {
       <Text
         style={{
           fontFamily: 'Muli-Bold',
-          fontSize: 18,
-          marginBottom: 10,
+          fontSize: 20,
+          marginTop: 10,
+          marginHorizontal: 20
         }}>
         Video List
       </Text>
       <FlatList
         showsVerticalScrollIndicator={false}
+        contentContainerStyle={{padding: 20}}
         data={videoList ? videoList : []}
-        keyExtractor={({index}) => String(index + 360)}
+        keyExtractor={(item, index) => String(index + 360)}
         onEndReachedThreshold={0.7}
         onEndReached={() => getVideos()}
-        renderItem={({item, index}) => {
-          return <TouchableOpacity
+        renderItem={({item, index}) => <TouchableOpacity
             key={index * 360}
             activeOpacity={0.7}
             onPress={() => navigation.navigate('VideoDetail', {detail: item})}>
@@ -61,8 +61,7 @@ export default ({navigation}) => {
               <Text numberOfLines={3} style={{fontFamily: "Muli-light", fontSize: 14}}>{item.description}</Text>
               </View>
             </View>
-          </TouchableOpacity>
-        }}
+          </TouchableOpacity>}
         ListEmptyComponent={() =>
           !loading && videoList.length < 1 ? (
             <View style={{flex: 1, alignItems: 'center', paddingVertical: 20}}>

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {View, Dimensions, NativeModules, Platform} from 'react-native';
+import {View, Dimensions, NativeModules, Platform, StatusBar} from 'react-native';
 import SafeAreaView from 'react-native-safe-area-view';
 import Orientation from 'react-native-orientation';
 import Video from 'react-native-video';
@@ -40,11 +40,13 @@ export default ({navigation, videoUrl}) => {
 
   useEffect(() => {
     let blur = navigation.addListener('blur', () => {
+      StatusBar.setHidden(false);
       state.isPlaying && _onPressPlayButton();
       KeepAwake.deactivate();
       Orientation.lockToPortrait();
     });
     let focus = navigation.addListener('focus', () => {
+      StatusBar.setHidden(true);
       !state.isPlaying && _onPressPlayButton();
       KeepAwake.activate();
       Orientation.lockToLandscapeRight();
@@ -182,11 +184,6 @@ export default ({navigation, videoUrl}) => {
     bufferForPlaybackMs: 2500,
     bufferForPlaybackAfterRebufferMs: 5000,
   };
-
-  // componentWillUnmount() {
-  //   props.nullVideo();
-  //   Orientation.lockToPortrait();
-  // }
 
   const _handleAppStateChange = async (nextAppState) => {
     // const { isPlaying } = state;

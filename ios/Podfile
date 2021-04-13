@@ -11,6 +11,8 @@ target 'buddieapp' do
   pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
   pod 'ReactNativeART', :path => '../node_modules/@react-native-community/art'
 
+  pod 'RNSecureStorage', :path => '../node_modules/react-native-secure-storage'
+
   target 'buddieappTests' do
     inherit! :complete
     # Pods for testing
