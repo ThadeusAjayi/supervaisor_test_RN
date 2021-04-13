@@ -13,6 +13,8 @@ target 'buddieapp' do
 
   pod 'RNSecureStorage', :path => '../node_modules/react-native-secure-storage'
 
+  pod 'react-native-orientation', :path => '../node_modules/react-native-orientation'
+
   target 'buddieappTests' do
     inherit! :complete
     # Pods for testing
